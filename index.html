@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Club TriÑuble: Un club deportivo sin fines de lucro dedicado al triatlón.">
+    <meta name="author" content="Club TriÑuble">
     <title>Trinuble-site</title>
 
     <!-- Bootstrap CSS -->
@@ -23,6 +25,19 @@
             margin-right: 10px;
             border-radius: 10px;
         }
+
+        /* Estilos del carrusel */
+        .carousel {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .carousel-img {
+            height: 500px;
+            max-height: 500px;
+            object-fit: cover;
+            /* Asegura que las imágenes cubran sin deformarse */
+        }
     </style>
 </head>
 
@@ -32,7 +47,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="index.html">Club TriÑuble</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -47,15 +63,43 @@
         </div>
     </nav>
 
-    <!-- Sección de imágenes con scroll horizontal -->
-    <div class="container mt-4">
-        <h2 class="text-center text-primary">TriÑuble friends & family</h2>
-        <div class="scroll-container">
-            <img src="img/triatleta_desierto.jpeg" alt="Triatlón 1">
-            <img src="img/triatleta_nieve.jpeg" alt="Triatlón 2">
-            <img src="img/triatlon_agua.jpeg" alt="Triatlón 3">
-            <img src="img/triatlon_bosque.jpeg" alt="Triatlón 4">
-            <img src="img/triatlon_espacio.jpeg" alt="Triatlón 5">
+    <!-- Carrusel de imágenes tipo banner -->
+    <div id="carouselTriatlon" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/triatleta_desierto.jpeg" class="d-block w-100 carousel-img" alt="Triatleta corriendo en el desierto">
+            </div>
+            <div class="carousel-item">
+                <img src="img/triatleta_nieve.jpeg" class="d-block w-100 carousel-img" alt="Triatleta compitiendo en la nieve">
+            </div>
+            <div class="carousel-item">
+                <img src="img/triatlon_agua.jpeg" class="d-block w-100 carousel-img" alt="Triatleta nadando en aguas abiertas">
+            </div>
+            <div class="carousel-item">
+                <img src="img/triatlon_bosque.jpeg" class="d-block w-100 carousel-img" alt="Triatlón en un entorno boscoso">
+            </div>
+            <div class="carousel-item">
+                <img src="img/triatlon_espacio.jpeg" class="d-block w-100 carousel-img" alt="Triatlón con un fondo espacial">
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTriatlon" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTriatlon" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselTriatlon" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselTriatlon" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselTriatlon" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselTriatlon" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselTriatlon" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
     </div>
 
@@ -78,6 +122,9 @@
     <footer class="bg-dark text-white text-center p-3 mt-5">
         &copy; 2025 Club TriÑuble - Todos los derechos reservados
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
