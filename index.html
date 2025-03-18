@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trinuble-site</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body class="bg-light">
 
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Club TriÑuble</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
     <div class="container text-center mt-5">
         <h1 class="text-primary fw-bold">Sitio web de Club TriÑuble</h1>
         <h2 class="text-danger">Este sitio está en DESARROLLO</h2>
         <p class="lead">Somos Triñuble, un club deportivo sin fines de lucro dedicados a disfrutar del triatlón.</p>
-    
+
         <h3 class="mt-4">Preguntas Frecuentes</h3>
         <ul class="list-group w-50 mx-auto">
             <li class="list-group-item">¿Qué es el triatlón?</li>
             <li class="list-group-item">¿Qué es un Ironman?</li>
-            <li class="list-group-item">¿Qué es un TopMan?</li>
+            <li class="list-group-item">¿Cómo comenzar en el triatlón?</li>
             <li class="list-group-item">¿Todos los triatlones tienen la misma distancia?</li>
         </ul>
     </div>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center p-3 mt-5">
         &copy; 2025 Club TriÑuble - Todos los derechos reservados
     </footer>
 
 </body>
+
 </html>
